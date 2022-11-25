@@ -1,0 +1,67 @@
+sort1 uses: bubble sort
+
+
+
+How do you know?: Is the slowest sorting exept when the dataset is already sorted, since then it only has to go through the values once.(Omega n)
+
+
+Dataset:
+random 50000
+real    0m7.673s
+user    0m7.173s
+sys     0m0.156s
+
+reverser 50000
+real    0m6.488s
+user    0m5.419s
+sys     0m0.202s
+
+sorted 50000
+real    0m0.556s
+user    0m0.057s
+sys     0m0.110s
+
+
+
+sort2 uses: merge sort
+
+How do you know?: Is always much faster than the other two (up to 10 times) no matter is sorted, random or reverserd.
+
+
+Dataset:
+Random 50000
+real    0m0.554s
+user    0m0.051s
+sys     0m0.165s
+
+reversed 50000
+real    0m0.471s
+user    0m0.036s
+sys     0m0.154s
+
+sorted 50000
+real    0m0.678s
+user    0m0.027s
+sys     0m0.177s
+
+
+sort3 uses: selection sort
+
+How do you know?: Has approximately the same speed no matter if the Array is sorted, reversed or random since it always has to sort through all numbers.
+
+
+Dataset:
+random 50000
+real    0m3.385s
+user    0m2.772s
+sys     0m0.205s
+
+reversed 50000
+real    0m3.370s
+user    0m2.822s
+sys     0m0.175s
+
+sorted 50000
+real    0m3.324s
+user    0m2.731s
+sys     0m0.207s
